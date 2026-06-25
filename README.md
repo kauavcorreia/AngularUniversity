@@ -1,59 +1,130 @@
-# AngularUniversity
+# Angular University
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.13.
+## Objetivo
 
-## Development server
+Aplicação Web desenvolvida em Angular para consulta de universidades ao redor do mundo utilizando a Universities API.
 
-To start a local development server, run:
+O sistema permite pesquisar universidades por país, visualizar informações institucionais, gerenciar favoritos, consultar histórico de pesquisas e acompanhar estatísticas dos resultados obtidos.
 
-```bash
+---
+
+## Tecnologias Utilizadas
+
+* Angular 21
+* TypeScript
+* Angular Material
+* HttpClient
+* Local Storage
+* RxJS
+* Chart.js (Bônus)
+
+---
+
+## Funcionalidades
+
+### Pesquisa de Universidades
+
+* Busca por país
+* Consumo de API REST
+
+### Resultados
+
+* Nome da universidade
+* País
+* Domínio institucional
+* Site oficial
+
+### Filtro Local
+
+* Pesquisa instantânea sem nova consulta à API
+
+### Favoritos
+
+* Adicionar favoritos
+* Remover favoritos
+* Persistência em Local Storage
+
+### Histórico
+
+* Registro dos últimos países pesquisados
+* Data e hora da consulta
+
+### Dashboard
+
+* Quantidade de universidades
+* Quantidade de domínios únicos
+* Quantidade de favoritos
+
+### Ordenação
+
+* Nome A-Z
+* Nome Z-A
+
+### Responsividade
+
+* Desktop
+* Tablet
+* Smartphone
+
+---
+
+## Estrutura do Sistema
+
+src/
+├── core/
+├── pages/
+├── shared/
+├── assets/
+└── app.routes.ts
+
+---
+
+## Instalação
+
+git clone https://github.com/seu-usuario/AngularUniversity.git
+
+cd AngularUniversity
+
+npm install
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## API Utilizada
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+http://universities.hipolabs.com/search?country=Brazil
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Screenshots
 
-```bash
-ng generate --help
-```
+### Tela Inicial
 
-## Building
+(adicionar imagem)
 
-To build the project run:
+### Tela de Resultados
 
-```bash
-ng build
-```
+(adicionar imagem)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Tela de Favoritos
 
-## Running unit tests
+(adicionar imagem)
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## Autor
 
-## Running end-to-end tests
+Nome: kauã vinicius correia
 
-For end-to-end (e2e) testing, run:
+Curso: Sistemas de informação
 
-```bash
-ng e2e
-```
+Disciplina: Desenvolvimento Web em alta performace
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Licença
 
-## Additional Resources
+Este projeto está licenciado sob a Licença MIT.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+A Licença MIT permite que qualquer pessoa utilize, copie, modifique, distribua e até comercialize o software, desde que o aviso de direitos autorais e a licença original sejam mantidos.
+
+Consulte o arquivo `LICENSE` para mais informações.
