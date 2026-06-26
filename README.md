@@ -99,15 +99,15 @@ http://universities.hipolabs.com/search?country=Brazil
 
 ## Screenshots
 
-## Screenshots
+### 🏠 Home
+![Home](./screenshots/home.png)
 
-## Screenshots
+### 📊 Results
+![Results](./screenshots/results.png)
 
-<p align="center">
-  <img src="./screenshots/home.png" width="32%" />
-  <img src="./screenshots/results.png" width="32%" />
-  <img src="./screenshots/favorites.png" width="32%" />
-</p>
+### ⭐ Favorites
+![Favorites](./screenshots/favorites.png)
+
 
 ---
 
