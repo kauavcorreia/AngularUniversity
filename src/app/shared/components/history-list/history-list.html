@@ -1,1 +1,14 @@
-<p>history-list works!</p>
+<h3>Search History</h3>
+
+@if (history.length === 0) {
+  <p>No searches yet.</p>
+}
+
+@for (item of history; track item.searchDate) {
+
+  <div>
+    <strong>{{ item.country }}</strong>
+    <p>{{ item.searchDate }}</p>
+  </div>
+
+}

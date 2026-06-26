@@ -1,1 +1,17 @@
-<p>favorites works!</p>
+<h1>Favorites</h1>
+
+@if (favorites.length === 0) {
+  <mat-card>
+    <mat-card-content>
+      Nenhuma universidade favoritada ainda.
+    </mat-card-content>
+  </mat-card>
+}
+
+<div class="grid">
+  @for (university of favorites; track university.name) {
+    <app-university-card
+      [university]="university">
+    </app-university-card>
+  }
+</div>

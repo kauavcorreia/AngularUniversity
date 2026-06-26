@@ -19,6 +19,8 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
+             "ssr": false,
+            "prerender": false,
             "assets": [
               {
                 "glob": "**/*",
@@ -26,13 +28,8 @@
               }
             ],
             "styles": ["src/material-theme.scss", "src/styles.css"],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
             "security": {
               "allowedHosts": []
-            },
-            "ssr": {
-              "entry": "src/server.ts"
             }
           },
           "configurations": {
@@ -78,3 +75,4 @@
     }
   }
 }
+

@@ -1,1 +1,17 @@
-<p>search-form works!</p>
+<mat-form-field appearance="outline">
+  <mat-label>Country</mat-label>
+
+  <input
+    matInput
+    [(ngModel)]="country"
+    placeholder="Ex: Brazil"
+  />
+
+</mat-form-field>
+
+<button
+  mat-raised-button
+  color="primary"
+ (click)="onSearch()">
+  Search
+</button>

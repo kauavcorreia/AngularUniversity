@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.logo {
+  font-weight: bold;
+}

@@ -1,1 +1,38 @@
-<p>results works!</p>
+<h1>Results</h1>
+
+@if (loading) {
+  <mat-card>
+    <mat-card-content>Loading...</mat-card-content>
+  </mat-card>
+}
+
+@if (error) {
+  <mat-card>
+    <mat-card-content>Error loading universities</mat-card-content>
+  </mat-card>
+}
+
+@if (!loading && !error) {
+
+  <app-dashboard
+    [totalUniversities]="totalUniversities"
+    [totalDomains]="totalDomains"
+    [totalFavorites]="totalFavorites">
+  </app-dashboard>
+
+  @if (universities.length === 0) {
+    <mat-card>
+      <mat-card-content>
+        No universities found
+      </mat-card-content>
+    </mat-card>
+  }
+
+  <div class="grid">
+    @for (university of universities; track university.name) {
+      <app-university-card
+        [university]="university">
+      </app-university-card>
+    }
+  </div>
+}

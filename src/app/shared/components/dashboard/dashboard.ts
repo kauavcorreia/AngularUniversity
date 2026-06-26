@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
-export class Dashboard {}
+export class Dashboard {
+  @Input() totalUniversities = 0;
+
+  @Input()
+  totalDomains = 0;
+
+  @Input()
+  totalFavorites = 0;
+
+}
